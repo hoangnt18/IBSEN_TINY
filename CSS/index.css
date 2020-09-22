@@ -199,51 +199,26 @@ body h2{
 
 /* form text*/
 
-.form-text {
-    font-family: 'Dancing Script', cursive;
-    font-size: 23px;
-    font-weight: 500;
-}
-/* footer */
-/* footer */
 footer{
-    padding: 50px 0 0;
-    margin: 50px 0 0;
-    /* background: linear-gradient(to right, rgb(0, 0, 0), rgb(63, 60, 60)); */
-    background-color: #ffebed;
-    color: black;
-}
-.footer-form textarea{
-    outline: none;
-}
-.footer-form textarea[placeholder] {
-   
-    padding-left: 10px;
-    padding-top: 5px;
-}
-.footer-button {
-    float: right;
-    margin-top: 5%;
-    height: 38px;
-    width: 90px;
-    text-align: center;
-    letter-spacing:1px;
-    color: #ea2227;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-radius: 5px;
-    border: 2px solid #ecf0f1;
-    background: #fff;
-    
-    transition: all .3s;
+    margin-top: 100px;
+    background-color: rgb(121, 55, 55);
+    padding: 100px 0;
+    color: white;
 }
 
-    .footer-button:hover {
-        color: white;
-        background: #eb4d4b;
-    }
 
+
+
+
+footer .footer_intro ul li{
+    display: inline;
+}
+
+
+footer .footer_connect p i{
+    font-size: 30px;
+    letter-spacing: 20px;
+}
 .toTop
 {
     position: fixed;
