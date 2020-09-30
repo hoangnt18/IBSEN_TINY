@@ -52,7 +52,14 @@
             <div class="topnav">
               <div class="logo"><img src="../img/logo-isben.png"></div>
               <div class="slogan">
-                <h1 class="my-3">IBSEN</br>TINY STAGE</h1>
+                <h1 class="ml1">
+                  <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">IBSEN TINY STAGE</span>
+                    
+                    <span class="line line2"></span>
+                  </span>
+                </h1>
               </div>
               <a class="navbutton">
                 <i class="fa fa-bars" aria-hidden="true" id="openMenu"></i>
@@ -153,10 +160,10 @@
 
 
     <footer class="container-fluid ">
-        <div class="row container mx-atuo">
+        <div class="row  mx-atuo">
           <div class="col-md-4 col-sm-12 footer_intro">
             <img src="../img/logo-isben.png" style="width: 40%;">
-              <h3>IBSEN Tiny Stage</h3>
+            <h3 class="ml3" style="font-size:30px">IBSEN Tiny Stage</h3>
               <ul>
                 <li><a href="../index.html">Trang chủ |</a></li>
                 <li><a href="./GioiThieu.html#intro">Giới thiệu |</a></li>
@@ -246,5 +253,59 @@
     <script src="../JavaScript/util.js"></script>
     <script src="../JavaScript/baToTop.js"></script>
     <script src="../JavaScript/topnav.js"></script>
+        <!-- anmation text -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+        <script>
+          // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml1 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        
+        anime.timeline({loop: true})
+          .add({
+            targets: '.ml1 .letter',
+            scale: [0.3,1],
+            opacity: [0,1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 600,
+            delay: (el, i) => 70 * (i+1)
+          }).add({
+            targets: '.ml1 .line',
+            scaleX: [0,1],
+            opacity: [0.5,1],
+            easing: "easeOutExpo",
+            duration: 700,
+            offset: '-=875',
+            delay: (el, i, l) => 80 * (l - i)
+          }).add({
+            targets: '.ml1',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
+        </script>
+        <script>
+          // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        
+        anime.timeline({loop: true})
+          .add({
+            targets: '.ml3 .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: (el, i) => 150 * (i+1)
+          }).add({
+            targets: '.ml3',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
+        </script>
 </body>
 </html>
