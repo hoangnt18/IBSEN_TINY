@@ -12,6 +12,29 @@ body h2{
     color: red;
 }
 
+/* #boxed-wrapper #wrapper .fusion-logo-link{
+    max-height: 110px; height: auto;position: absolute; top: 0;left: 0;
+
+} */
+
+#boxed-wrapper #wrapper .fusion-logo-link img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+#boxed-wrapper .fusion-header-wrapper{
+    height: 750px; background: url('./img/HÌNH\ 2.jpg');-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+}
+
+.boxed-wrapper{
+    font-family: 'Sriracha', cursive;
+    padding: 0;
+    margin: 0;
+   
+    box-sizing: border-box;
+}
 
 /*  */
 
@@ -363,9 +386,30 @@ img{
 
 } */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:769px){
+
+    #boxed-wrapper #wrapper .fusion-header-wrapper{
+        height: 350px; 
+
+        width: 100%;
+    }
 
 
+    
+    #boxed-wrapper #wrapper .fusion-logo-link img{
+        width: 100px;
+        height: 100px;
+        transform: translateX(-330px);
+        
+    }
+
+    #boxed-wrapper #wrapper .fusion-logo-link .ml1{
+        position: absolute;
+        width: 250px;
+        top: 0%;
+        left: 30%;
+        
+    }
 
 
     .Carousel .Carousel_text{
@@ -404,6 +448,34 @@ img{
 
 @media screen and (max-width:576px){
     /* header */
+
+    #boxed-wrapper #wrapper .fusion-header-wrapper{
+        height: 250px; 
+
+        width: 100%;
+    }
+
+
+    #boxed-wrapper #wrapper .fusion-logo-link{
+        max-height: 110px; height: auto;position: absolute; top: 0;left: 0;
+
+    }
+
+    #boxed-wrapper #wrapper .fusion-logo-link img{
+        width: 70px;
+        height: 70px;
+        transform: translateX(-30%);
+        
+    }
+
+    #boxed-wrapper #wrapper .fusion-logo-link .ml1{
+        position: absolute;
+        width: 200px;
+        top: -20%;
+        left: 150%;
+        
+    }
+
 
     header .h3, header p{
         font-size:15px;
@@ -456,6 +528,11 @@ img{
         height: 50px;
 
     }
+
+    /* .news .news_content .news_item .news_img img{
+        width: 50px !important;
+        height: 50px !important;
+    } */
 
     .ml1 span{
         font-size: 15px;
