@@ -386,7 +386,7 @@ img{
 
 } */
 
-@media screen and (max-width:769px){
+@media screen and (min-width:577px) and ( max-width:769px){
 
     #boxed-wrapper #wrapper .fusion-header-wrapper{
         height: 350px; 
@@ -440,6 +440,19 @@ img{
         width: 97% !important;
     }
 
+    #footer_connect img {
+        width: 70px !important;
+        margin-left: 70px !important;
+        height: 70px;
+    }
+
+    /* #footer_connect{
+        margin-right: 10px;
+    } */
+/* 
+    #footer_img{
+        margin-right: 50px;
+    } */
 
 
 
@@ -454,6 +467,14 @@ img{
 
         width: 100%;
     }
+
+/* #IBSEN_Tiny{
+    padding-left: 50px;
+} */
+
+#ml1{
+    margin-right: 50px;
+}
 
 
     #boxed-wrapper #wrapper .fusion-logo-link{
@@ -529,6 +550,17 @@ img{
 
     }
 
+    #zalo-footer img{
+        position: absolute;
+        bottom:20%;
+        left: 30%;
+        
+    }
+
+    #form-footer{
+        margin-top: 30px;
+    }
+
     /* .news .news_content .news_item .news_img img{
         width: 50px !important;
         height: 50px !important;
@@ -541,6 +573,34 @@ img{
     footer .footer_intro .ml3{
         font-size:10px;
     } */
+
+    .container-fluid  .footer_intro img{
+        width: 100px !important;
+        position: absolute;
+        bottom:110px;
+        left:35%;
+       
+    }
+
+    #footer_intro{
+        text-align: center;
+    }
+    #footer_connect{
+        margin-left: 30px !important;
+    }
+    
+    #footer_img a img{
+        margin-left: 50px;
+    }
+
+    #footer_connect h3{
+       
+        margin: 30px;
+    }
+    #footer_input{
+        width: 100px !important;
+    }
+    
 
 }
 
